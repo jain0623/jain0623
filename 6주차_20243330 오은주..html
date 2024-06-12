@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul id="menu">
+    <li><a href="#content1">특징</a></li>
+    <li><a href="#content2">효능</a></li>
+    <li><a href="#content3">주문하기</a></li>
+    <li><a href="#content4">상품정보</a></li>
+</ul>
+<hr>
+<h1>방울 토마토</h1>
+<figure>
+    <img src="./images/tomato.jpg" alt="생산된 방울 토마토">
+    <figcaption>생산된 방울 토마토</figcaption>
+</figure>
+<hr>
+<h2 id="content1">특징</h2>
+<ul>
+    <li>맛이 달고 진함</li>
+    <li>크기가 작고 귀여워서 아이들도 좋아함</li>
+    <li>건강한 성부닝 많이 함유됨</li>
+    <li>다양한 요리나 음료에 사용 가능</li>
+</ul>
+<a href="https://www.10000recipe.com/recipe/6840905" target="_blank">방울 토마토 요리방법 보기</a> 
+<hr>
+<h2 id="content2">효능</h2>
+<ul>
+    <li><mark>항산화 작용</mark>으로 노화 방지에 좋다.</li>
+    <li><mark>칼륨 함량</mark>이 높아서 혈압 조절에 좋다.</li>
+    <li><mark>비타민 C 함량</mark>이 높아서 면역력 향상에 좋다.</li>
+    <li><mark>체내 독소 제거와 간 기능 개선</mark>에도 효과가 있다.</li>
+</ul>
+<hr>
+<h2 id="content3">주문하기</h2>
+<P>방울 토마토는 <u><b>3kg에 2만원</b></u>입니다. 주무하시려면 아래 링크를 클릭해주세요.</P>
+<p><a href="#order"><button type="button">주문하기</button></a></p>
+<hr>
+<h2 id="content4">상품정보</h2>
+<table border="1">
+    <tr>
+        <th>상품번호</th>
+        <td>12345</td>
+    </tr>
+    <tr>
+        <th>상품상태</th>
+        <td>신선</td>
+    </tr>
+    <tr>
+        <th>원산지</th>
+        <td>한국</td>
+    </tr>
+    <tr>
+        <th>품종</th>
+        <td>방울 토마토</td>
+    </tr>
+    <tr>
+        <th>수확시기</th>
+        <td>하절기</td>
+    </tr>
+</table>
+<br>
+<img src="./images/tomato_1.png" width="100" height="100" alt="방울 토마토">
+<hr>
+<h2><a href="#menu">Top으로 이동</a></h2>
+<br><br><br>
+<h1 id="order">상품 주문서</h1>
+<form>
+    <fieldset>
+        <legend>개인 정보</legend>
+        <ul>
+            <li>
+                <label>주문자 이름</label>
+                <input type="text" id="name">
+            </li>
+            <li>
+                <label>전화번호</label>
+                <input type="text" id="tel" placeholder="번호만 입력">
+            </li>            
+        </ul>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>배송 정보</legend>
+        <ul>
+            <li>
+                <label>배송옵션 : </label>
+                <label><input type="radio" name="subject" value="addr1">기존 배송지</label>
+                <label><input type="radio" name="subject" value="addr2">새 배송지</label>
+            </li>
+            <li>
+                <label>주소</label>
+                <input type="text" id="addr">
+            </li>
+            <li>
+                <label>요청사항</label>
+                <select>
+                    <option value="delivery1">요청사항을 선택하세요.</option>
+                    <option value="delivery2">배송 전에 미리 연락 바랍니다.</option>
+                    <option value="delivery3">부재시 경비실에 맡겨주세요.</option>
+                    <option value="delivery4">부재시 전화 주시거나 문자 남겨주세요.</option>
+                </select>
+            </li>
+        </ul>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>주문 정보</legend>
+        상품<br/>
+        <label><input type="checkbox" name="subject" value="tomato1">방울토마토1kg <s>10,000원</s><strong>8,000원</strong> <input type="text">박스</label><br>
+        <label><input type="checkbox" name="subject" value="tomato1">방울토마토2kg <s>20,000원</s><strong>16,000원</strong> <input type="text">박스</label><br>
+        <label><input type="checkbox" name="subject" value="tomato1">방울토마토3kg <s>30,000원</s><strong>24,000원</strong> <input type="text">박스</label><br>
+        <label>기타사항</label>
+        <textarea name="tb" rows="4" cols="50" wrap="virtual"></textarea>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>결제 수단</legend>
+        <ul>
+            <li><label><input type="radio" name="subject" value="cash">계좌 이체</label><br></li>
+            <li><label><input type="radio" name="subject" value="card">카드 결제</label><br></li>
+            <li><label><input type="radio" name="subject" value="normal">일반 결제</label><br></li>
+        </ul>
+    </fieldset>
+    <br><br>
+    <button type="reset">초기화</button>
+    <button type="submit">결제하기</button><br><br>
+</form>
+</body>
+</html>
